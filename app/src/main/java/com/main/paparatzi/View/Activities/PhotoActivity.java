@@ -53,7 +53,7 @@ public class PhotoActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             photo = bundle.getParcelable("photo");
-            Log.d("pttt", "onCreate: PHOTO ID IMG " + photo.getImageId() + " " + photo.getBody() + photo.getDate());
+//            Log.d("pttt", "onCreate: PHOTO ID IMG " + photo.getImageId() + " " + photo.getBody() + photo.getDate());
         }
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         setContentView(R.layout.activity_photo);

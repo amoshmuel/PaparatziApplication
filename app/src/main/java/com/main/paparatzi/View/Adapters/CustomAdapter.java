@@ -59,7 +59,7 @@ public class CustomAdapter extends RecyclerView.Adapter<ViewHolder> {
     private void openPhotoActivity(Photo photo) {
         Log.d("pttt", "openPhotoActivity: ");
         Intent myIntent = new Intent(context, PhotoActivity.class);
-        myIntent.putExtra("Photo", photo);
+        myIntent.putExtra("photo", photo);
          context.startActivity(myIntent);
     }
 
