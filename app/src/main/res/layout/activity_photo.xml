@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activities.PhotoActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/camera_wood" />
+
+
+
+    <ImageView
+        android:id="@+id/photoActivity_IMG_addImage"
+        android:layout_width="212dp"
+        android:layout_height="224dp"
+        android:clickable="true"
+        android:paddingTop="30dp"
+        android:src="@drawable/ic_camera_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/photoActivity_LBL_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--    android:src="@mipmap/ic_camera_round"-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/photoActivity_LBL_title"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint = "@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title_label"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoActivity_IMG_addImage">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="20dp"
+            android:textSize="20dp"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/ic_baseline_title_24"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/photoActivity_LBL_body"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint = "@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/body_label"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoActivity_LBL_title">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="20dp"
+            android:textSize="20dp"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/ic_baseline_titles_24"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/photoActivity_LBL_date"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoActivity_LBL_body">
+
+<!--        app:startIconDrawable="@drawable/ic_calendar_foreground"-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:textColor = "@color/white"
+            android:drawableLeft="@drawable/ic_calendar_foreground"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--    android:background="@color/black"-->
+    <Button
+        android:id="@+id/photoActivity_BTN_save"
+        style="?attr/materialButtonOutlinedStyle"
+        android:textColor = "@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="SAVE"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoActivity_LBL_date" />
+
+    <Button
+        android:id="@+id/photoActivity_BTN_delete"
+        style="?attr/materialButtonOutlinedStyle"
+        android:textColor = "@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="DELETE"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoActivity_LBL_date" />
+</androidx.constraintlayout.widget.ConstraintLayout>

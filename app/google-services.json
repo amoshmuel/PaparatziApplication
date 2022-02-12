@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "406289914741",
+    "project_id": "paparatzi-e1269",
+    "storage_bucket": "paparatzi-e1269.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406289914741:android:edd834c10ea96941c7913c",
+        "android_client_info": {
+          "package_name": "com.main.paparatzi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406289914741-khu7vcqg9t8ceq9vunlopgt0g07f810t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6bI7Pou290O9V7P5xFNSU_JXbUDnLTkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406289914741-khu7vcqg9t8ceq9vunlopgt0g07f810t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

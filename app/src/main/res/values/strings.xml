@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Paparatzi</string>
+    <string name="map_item_label">Map</string>
+    <string name="list_item_label">List</string>
+    <string name="title_label">Title</string>
+    <string name="body_label">Body</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_label">LOGIN</string>
+    <string name="signUp_label">Signup?</string>
+    <string name="register_label">Register</string>
+    <string name="email_ask">enter your email :</string>
+    <string name="password_ask">enter your password :</string>
+    <string name="password_ask_confirm">renter your password :</string>
+    <string name="list_empty">There are no photos </string>
+</resources>
